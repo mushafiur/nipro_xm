@@ -1,0 +1,316 @@
+/*font links*/
+@font-face{
+	src: url(../fonts/roboto/roboto-regular.ttf);
+	font-family: roboto-regular;
+}
+@font-face{
+	src: url(../fonts/roboto/roboto-medium.ttf);
+	font-family: roboto-medium;
+}
+@font-face{
+	src: url(../fonts/lato/lato-black.ttf);
+	font-family: lato-black;
+}
+@font-face{
+	src: url(../fonts/lato/lato-bold.ttf);
+	font-family: lato-bold;
+}
+@font-face{
+	src: url(../fonts/lato/lato-light.ttf);
+	font-family: lato-light;
+}
+@font-face{
+	src: url(../fonts/lato/lato-regular.ttf);
+	font-family: lato-regular;
+}
+@font-face{
+	src: url(../fonts/lato/lato-thin.ttf);
+	font-family: lato-thin;
+}
+
+/*css variables*/
+:root{
+	--rob:roboto-regular;
+	--lato:lato-regular;
+
+	--black:#333333;
+	--ash:#8e8e8e;
+	--white:#ffffff;
+}
+
+/*common start*/
+body{
+	font-family: var(--rob);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--ash);
+}
+/*common end*/
+/*header start*/
+.header{
+	padding:30px 0;
+}
+.logo{}
+.menu{}
+.menu ul li a{
+	margin-right: 30px;
+	font-family: var(--lato);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--ash) !important;
+	text-transform: uppercase;
+	transition: .33s;
+}
+.menu ul li a:hover{
+	color: var(--black) !important;
+}
+.c_icon{}
+.c_icon:hover{
+	color: var(--black);
+	cursor: pointer;
+}
+
+/*header end*/
+/*hero start*/
+.hero{
+	background-image: url(../images/b_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*carousel start*/
+.b_carousel{
+	padding-top: 200px;
+}
+.c_item_hero{}
+.c_item_hero h1{
+	font-family: lato-bold;
+	font-size: 60px;
+	font-weight: 700;
+	color:var(--white);
+
+}
+.c_item_hero p{
+	margin: 50px 100px 50px 0px;
+	color: var(--white);
+	line-height: 30px;
+}
+.c_btn{
+	margin-bottom: 200px;
+	padding: 10px 30px;
+	width: 200px;
+	height: 50px;
+	background-color: var(--white);
+	border-radius: 0;
+	transition: .33s;
+}
+.c_btn:hover, .c_btn:active{
+	background-color: var(--ash) !important;
+	color: var(--white) !important;
+}
+.c_btn span{
+	margin-right: 20px;
+	font-family: roboto-medium;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.c_btn i{
+	font-size: 16px;
+}
+
+.slider_button{}
+.s_button{
+	background-color: transparent;
+	font-family: var(--rob);
+    font-size: 15px;
+    font-weight: 400;
+    color: #8e8e8e;
+    border: none;
+    text-transform: uppercase;
+}
+.s_button:hover{
+	color:#333333;
+}
+.s_button span{}
+
+.span_s{
+	font-size: 20px;
+   color: #333333;
+}
+
+
+/*hero end*/
+/*welcome start*/
+.welcome{
+	padding-bottom: 100px;
+}
+
+.f_row{}
+.f_row span{
+	font-family: lato-light;
+	font-size: 50px;
+	font-weight: 300;
+	color: var(--black);
+}
+.f_row h1{
+	font-family: var(--lato);
+	font-size: 30px;
+	font-weight: 400;
+	color: var(--black);
+	text-transform: uppercase;
+}
+.f_row p{
+	margin: 50px 0 100px 0;
+	line-height: 30px;
+}
+
+/*second_row*/
+.wel_1{
+	margin-top: 40px;
+	padding: 0 0 40px 0;
+	border: 1px solid #cccccc;
+	transition: .33s;
+}
+.wel_1:hover{
+	border: 1px solid var(--black);
+}
+.w_icon{
+	margin:-6px auto;
+	width: 70px;
+	background-color: var(--white);
+}
+.w_icon i{
+	font-size: 60px;
+	line-height: 30px;
+}
+.wel_1:hover .w_icon i{
+	color: var(--black);
+}
+.wel_1 h2{
+	margin-top: 40px;
+	font-family: lato-bold;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--black);
+	text-transform: uppercase;
+}
+.wel_1 hr{
+	  margin: 15px auto;
+	  width: 60px;
+      color: var(--ash);
+}
+.wel_1 p{
+	padding: 0 15px;
+	margin-bottom: 40px;
+
+}
+.wel_1 a{
+	color: var(--ash) !important;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.wel_1:hover a{
+	color: var(--black) !important;
+}
+.wel_1 a i{
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+
+/*welcome end*/
+/*about us start*/
+.about_us{
+	padding-bottom: 100px;
+}
+.about_img{}
+.about_img img{}
+
+.about_s{}
+.about_s h1{
+	font-family: lato-regular;
+	font-size: 30px;
+	font-weight: 400;
+	color: var(--black);
+	text-transform: uppercase;
+}
+.about_s p{
+	margin-top:25px;
+	margin-bottom: 25px;
+	line-height: 27px;
+}
+.about_btn{
+	border: 1px solid var(--black);
+}
+
+/*about us end*/
+/*recent work*/
+.recent_work{
+	padding-bottom: 100px;
+	background-color: #f8f8f8;
+}
+.r_text{}
+.r_text h1{
+	margin-bottom: 100px;
+}
+.r_list{}
+.r_list ul li a{
+	margin-right: 20px;
+	color: var(--ash) !important;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid transparent;
+	transition: .33s;
+}
+.r_list ul li a:hover{
+	font-family: roboto-medium;
+	font-weight: 500;
+	color: var(--black) !important;
+	border: 1px solid var(--black);
+}
+
+.r_img{
+	margin-top: 30px;
+}
+/*why choose nipro*/
+.why_n{}
+
+.s_opt{
+	margin-top: 40px;
+}
+
+.s_opt_r{}
+.s_opt_r i {
+	margin-left: 10px;
+    font-size: 60px;
+    transition: .33s;
+}
+.s_opt_r i:hover{
+	color: var(--black);
+}
+.s_opt_r h2{
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: lato-bold;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.s_opt_r i:hover .s_opt_r h2{
+	color: var(--black);
+}
+.s_opt P{
+	margin-top: 40px;
+	line-height: 27px;
+}
+.s_opt_r hr{}
+.s_opt_r i:hover .s_opt_r hr{
+	color: var(--black);
+}
+
+
+
